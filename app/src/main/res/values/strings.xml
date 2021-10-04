@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HomeworkBroadcastReceiver</string>
+    <string name="task2"><![CDATA[fun f(x: Boolean) { \n when (x) { \n \t x == true -> println(″$x TRUE″) \n \t x == false -> println(″$x FALSE″) \n \t } \n } \n f(true) \n f(false)]]></string>
+</resources>

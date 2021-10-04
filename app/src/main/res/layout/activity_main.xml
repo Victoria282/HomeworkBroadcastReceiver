@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        style="@style/btn"
+        android:id="@+id/button_start"
+        android:text="Старт"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:padding="30dp"
+        android:id="@+id/textView"
+        style="@style/textViewStyle"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:text="Простенькая задачка для преподавателя \n 😊"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.638" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:visibility="gone"
+        android:layout_width="400dp"
+        android:layout_height="144dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_start">
+        <TextView
+            style="@style/textViewStyle"
+            android:id="@+id/countUser"
+            android:layout_marginTop="80dp" />
+        <TextView
+            android:id="@+id/timeUser"
+            android:layout_marginTop="48dp"
+            style="@style/textViewStyle" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
