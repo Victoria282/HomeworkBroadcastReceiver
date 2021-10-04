@@ -65,7 +65,7 @@ class TestActivity : AppCompatActivity() {
 
         return String.format("%02d:%02d:%02d", hours, minutes, seconds)
     }
-    
+
     override fun onDestroy() {
         super.onDestroy()
         stopService(Intent(this, CheckTime::class.java))
